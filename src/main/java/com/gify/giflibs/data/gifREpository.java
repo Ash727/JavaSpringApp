@@ -14,12 +14,12 @@ import java.util.stream.Collectors;
 @Component
 public class gifREpository {
     private static final List<Gif> ALL_gifs = Arrays.asList(
-            new Gif("android-explosion", LocalDate.of(2015,2,13), "Chris Ramacciotti", false),
-            new Gif("ben-and-mike", LocalDate.of(2015,10,30), "Ben Jakuben", true),
-            new Gif("book-dominos", LocalDate.of(2015,9,15), "Craig Dennis", false),
-            new Gif("compiler-bot", LocalDate.of(2015,2,13), "Ada Lovelace", true),
-            new Gif("cowboy-coder", LocalDate.of(2015,2,13), "Grace Hopper", false),
-            new Gif("infinite-andrew", LocalDate.of(2015,8,23), "Marissa Mayer", true));
+            new Gif("android-explosion", LocalDate.of(2015,2,13), "Chris Ramacciotti", false,1),
+            new Gif("ben-and-mike", LocalDate.of(2015,10,30), "Ben Jakuben", true,2),
+            new Gif("book-dominos", LocalDate.of(2015,9,15), "Craig Dennis", false,3),
+            new Gif("compiler-bot", LocalDate.of(2015,2,13), "Ada Lovelace", true,4),
+            new Gif("cowboy-coder", LocalDate.of(2015,2,13), "Grace Hopper", false,5),
+            new Gif("infinite-andrew", LocalDate.of(2015,8,23), "Marissa Mayer", true,6));
     public void addGif(Gif gif){
         ALL_gifs.add(gif);
     }
@@ -35,4 +35,5 @@ public class gifREpository {
     public static List<Gif> getALL_gifs() {
         return ALL_gifs;
     }
+
 }
